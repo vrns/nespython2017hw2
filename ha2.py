@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 25 14:05:07 2018
 
-@author: v
-"""
 
 def sumThreeFive(n):
     sum = 0
@@ -14,3 +10,12 @@ def sumThreeFive(n):
             sum = sum+x
         #print(sum, x)
     return sum
+
+def fibo(n):
+    n = int(n)
+    if n==2:
+        return 2
+    elif n==1:
+        return 1
+    else:
+        return fibo(n-1)+fibo(n-2)
